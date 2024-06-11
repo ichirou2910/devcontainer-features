@@ -57,7 +57,7 @@ echo "Building"
 
 cd "/tmp/nnn-$ORIGINAL_VERSION"
 
-make $BUILD_ARGS && make strip install
+make $MAKEOPTS && make strip install
 
 echo "Cleaning up"
 

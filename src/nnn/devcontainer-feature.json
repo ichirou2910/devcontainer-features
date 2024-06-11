@@ -20,7 +20,7 @@
       "default": "4.9",
       "description": "The version of nnn to be installed (in the format 'MAJOR.MINOR' e.g. 4.9)"
     },
-    "buildArgs": {
+    "makeOpts": {
       "type": "string",
       "default": "",
       "description": "Arguments to make command"

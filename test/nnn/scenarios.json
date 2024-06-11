@@ -3,7 +3,8 @@
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
       "nnn": {
-        "version": "4.9"
+        "version": "4.9",
+        "makeOpts": "O_NERD=1"
       }
     }
   }
