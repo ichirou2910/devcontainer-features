@@ -1,0 +1,10 @@
+{
+  "nnn": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "nnn": {
+        "version": "4.9"
+      }
+    }
+  }
+}
