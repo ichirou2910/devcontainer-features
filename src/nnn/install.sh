@@ -24,6 +24,7 @@ if [ "$(id -u)" -ne 0 ]; then
 	exit 1
 fi
 
+ORIGINAL_VERSION=$VERSION
 ADJUSTED_VERSION=v$VERSION
 
 # Bring in ID, ID_LIKE, VERSION_ID, VERSION_CODENAME
@@ -54,10 +55,10 @@ curl -sL "https://github.com/jarun/nnn/archive/refs/tags/$ADJUSTED_VERSION.tar.g
 
 echo "Building"
 
-cd "/tmp/nnn-$VERSION"
+cd "/tmp/nnn-$ORIGINAL_VERSION"
 
 make $BUILD_ARGS && make strip install
 
 echo "Cleaning up"
 
-rm -rf "/tmp/nnn-$VERSION"
+rm -rf "/tmp/nnn-$ORIGINAL_VERSION"
