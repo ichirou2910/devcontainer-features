@@ -55,10 +55,10 @@ curl -sL https://github.com/jarun/nnn/archive/refs/tags/${ADJUSTED_VERSION}.tar.
 
 echo "Building"
 
-cd /tmp/nnn-${VERSION}
+cd "/tmp/nnn-${VERSION}"
 
 make $BUILD_ARGS && make strip install
 
 echo "Cleaning up"
 
-rm -rf /tmp/nnn-${VERSION}
+rm -rf "/tmp/nnn-${VERSION}"
