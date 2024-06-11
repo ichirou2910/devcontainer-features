@@ -1,11 +1,10 @@
 #!/bin/bash
-# shellcheck disable=2086
 
 set -e
 
 echo "Activating feature 'nnn'"
 
-VERSION=${VERSION:-4.9}
+VERSION="${VERSION:-4.9}"
 echo "The version to be installed is: $VERSION"
 
 install_dependencies() {
@@ -51,14 +50,14 @@ esac
 
 echo "Downloading source for version $ADJUSTED_VERSION"
 
-curl -sL https://github.com/jarun/nnn/archive/refs/tags/${ADJUSTED_VERSION}.tar.gz | tar -xzC /tmp 2>&1
+curl -sL "https://github.com/jarun/nnn/archive/refs/tags/$ADJUSTED_VERSION.tar.gz" | tar -xzC /tmp 2>&1
 
 echo "Building"
 
-cd "/tmp/nnn-${VERSION}"
+cd "/tmp/nnn-$VERSION"
 
 make $BUILD_ARGS && make strip install
 
 echo "Cleaning up"
 
-rm -rf "/tmp/nnn-${VERSION}"
+rm -rf "/tmp/nnn-$VERSION"
