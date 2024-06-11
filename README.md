@@ -10,6 +10,7 @@ Build nnn from source and installs
   "features": {
     "ghcr.io/ichirou2910/devcontainer-features/nnn:1": {
       "version": "4.9",
+      "makeOpts": "O_NERD=1",
     },
   },
 }
