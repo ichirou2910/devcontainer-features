@@ -1,0 +1,32 @@
+{
+  "name": "nnn (from source)",
+  "id": "nnn",
+  "version": "1.0.0",
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/common-utils": {}
+  },
+  "description": "The unorthodox terminal file manager",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "4.9",
+        "4.8",
+        "4.7",
+        "4.6",
+        "4.5",
+        "4.4"
+      ],
+      "default": "4.9",
+      "description": "The version of nnn to be installed (in the format 'MAJOR.MINOR' e.g. 4.9)"
+    },
+    "buildArgs": {
+      "type": "string",
+      "default": "",
+      "description": "Arguments to make command"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}

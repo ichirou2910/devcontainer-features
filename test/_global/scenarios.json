@@ -1,13 +1,10 @@
 {
-    "color_and_hello": {
+    "all": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "color": {
-                "favorite": "purple"
+            "nnn": {
+                "version": "4.9"
             },
-            "hello": {
-                "greeting": "Greetings"
-            }
         }
     }
 }
