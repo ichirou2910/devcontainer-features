@@ -10,7 +10,7 @@ echo "The version to be installed is: $VERSION"
 
 install_dependencies() {
 	apt-get update -y
-	apt-get install pkg-config libncursesw5-dev libreadline-dev
+	apt-get install -y pkg-config libncursesw5-dev libreadline-dev
 
 	apt-get -y clean
 	rm -rf /var/lib/apt/lists/*
